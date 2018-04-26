@@ -14,6 +14,13 @@
   <url>http://www.joda.org/joda-time-hibernate/</url>
 
   <!-- ==================================================================== -->
+
+  <repository>
+    <id>nexus-snapshots</id>
+    <url>localhost/repository/maven-snapshots/</url>
+  </repository>
+
+  <!-- ==================================================================== -->
   <issueManagement>
     <system>GitHub</system>
     <url>https://github.com/JodaOrg/joda-time-hibernate/issues</url>
