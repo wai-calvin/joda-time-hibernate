@@ -14,13 +14,6 @@
   <url>http://www.joda.org/joda-time-hibernate/</url>
 
   <!-- ==================================================================== -->
-
-  <repository>
-    <id>nexus-snapshots</id>
-    <url>localhost/repository/maven-snapshots/</url>
-  </repository>
-
-  <!-- ==================================================================== -->
   <issueManagement>
     <system>GitHub</system>
     <url>https://github.com/JodaOrg/joda-time-hibernate/issues</url>
@@ -422,12 +415,12 @@
 
   <!-- ==================================================================== -->
   <distributionManagement>
+
     <repository>
-      <id>sonatype-joda-staging</id>
-      <name>Sonatype OSS staging repository</name>
-      <url>http://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-      <layout>default</layout>
+      <id>nexus-snapshots</id>
+      <url>localhost/repository/maven-snapshots/</url>
     </repository>
+
     <snapshotRepository>
       <uniqueVersion>false</uniqueVersion>
       <id>sonatype-joda-snapshot</id>
