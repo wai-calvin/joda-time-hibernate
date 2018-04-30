@@ -82,7 +82,7 @@
     <!-- define build -->
     <plugins>
 
-    <!-- ++++++++++++ -->
+    <!-- ++++++++++++ 
 
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
@@ -102,7 +102,7 @@
         </configuration>
       </plugin>
 
-    <!-- ++++++++++++ -->
+    -- ++++++++++++ -->
 
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
