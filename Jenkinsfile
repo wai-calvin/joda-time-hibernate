@@ -7,17 +7,17 @@ pipeline {
                 sh 'mvn compile'
             }
         }
-    }
 
-    stage('Test') {
-        steps {
-            sh 'mvn test'
+        stage('Test') {
+            steps {
+                sh 'mvn test'
+            }
         }
-    }
 
-    stage('Deploy') {
-        steps {
-            echo "deploying..."
+        stage('Deploy') {
+            steps {
+                echo "deploying..."
+            }
         }
     }
 }
