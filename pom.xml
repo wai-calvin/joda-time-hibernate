@@ -420,19 +420,19 @@
 
   <!-- ==================================================================== -->
 
-  <distributionManagement>
+  <!-- <distributionManagement>
     <repository>
       <id>joda-time-hibernate</id>
       <name>joda-time-hibernate</name>
       <url>http://localhost:8082/artifactory/joda-time-hibernate</url>
     </repository>
-  </distributionManagement>
-  <!-- <distributionManagement>
+  </distributionManagement> -->
+  <distributionManagement>
     <snapshotRepository>
       <id>nexus-snapshots</id>
       <url>http://localhost:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
-  </distributionManagement> -->
+  </distributionManagement>
 
   <!-- ==================================================================== -->
   <profiles>
