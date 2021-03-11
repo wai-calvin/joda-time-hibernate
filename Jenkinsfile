@@ -4,22 +4,23 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'export MAVEN_HOME=/Users/cwai/Downloads/apache-maven-3.6.3'
-                sh 'export PATH=$PATH:$MAVEN_HOME/bin'
+                sh 'export M2_HOME=/Users/cwai/Downloads/apache-maven-3.6.3' 
+                sh 'export PATH=$PATH:$M2_HOME/bin'
+                sh 'mvn --version'
                 sh 'mvn compile'
             }
         }
 
-        stage('Test') {
-            steps {
-                sh 'mvn test'
-            }
-        }
+        // stage('Test') {
+        //     steps {
+        //         sh 'mvn test'
+        //     }
+        // }
 
-        stage('Deploy') {
-            steps {
-                echo "deploying..."
-            }
-        }
+        // stage('Deploy') {
+        //     steps {
+        //         echo "deploying..."
+        //     }
+        // }
     }
 }
