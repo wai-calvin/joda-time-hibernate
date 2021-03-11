@@ -424,7 +424,7 @@
     <repository>
       <id>joda-time-hibernate</id>
       <name>joda-time-hibernate</name>
-      <url>http://localhost:8082/ui/admin/repositories/local/joda-time-hibernate</url>
+      <url>http://localhost:8082/artifactory/joda-time-hibernate</url>
     </repository>
   </distributionManagement>
   <!-- <distributionManagement>
