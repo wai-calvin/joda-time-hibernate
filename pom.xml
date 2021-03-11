@@ -421,11 +421,18 @@
   <!-- ==================================================================== -->
 
   <distributionManagement>
+    <repository>
+      <id>joda-time-hibernate</id>
+      <name>joda-time-hibernate</name>
+      <url>localhost:8082</url>
+    </repository>
+  </distributionManagement>
+  <!-- <distributionManagement>
     <snapshotRepository>
       <id>nexus-snapshots</id>
       <url>http://localhost:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
-  </distributionManagement>
+  </distributionManagement> -->
 
   <!-- ==================================================================== -->
   <profiles>
