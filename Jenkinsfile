@@ -21,8 +21,15 @@ pipeline {
 
         stage ('Build') {
             steps {
-                echo 'This is a minimal pipeline.'
+                echo 'Building...'
                 sh 'mvn compile'
+            }
+        }
+
+        stage ('Test') {
+            steps {
+                echo 'Testing...'
+                sh 'mvn test'
             }
         }
     }
