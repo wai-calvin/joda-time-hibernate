@@ -7,7 +7,7 @@ pipeline {
     parameters {
         string(name: 'ARTIFACTORY_SERVER', defaultValue: 'joda-time-hibernate')
         string(name: 'SERVER_URL', defaultValue: '')
-        string(name: 'MAVEN_TOOL', defaultValue: 'mmaven')
+        string(name: 'MAVEN_TOOL', defaultValue: 'apache-maven-3.6.3')
         password(name: 'USER', defaultValue: 'SECRET')
         password(name: 'PASSWORD', defaultValue: 'SECRET')
     }
