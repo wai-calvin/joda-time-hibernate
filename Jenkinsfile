@@ -26,7 +26,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://github.com/ssmathistad/joda-time-hibernate.git'
+                git 'https://github.com/wai-calvin/joda-time-hibernate.git'
             }
         }
         
