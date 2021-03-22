@@ -420,19 +420,19 @@
 
   <!-- ==================================================================== -->
 
-  <!-- <distributionManagement>
+  <distributionManagement>
     <repository>
       <id>joda-time-hibernate</id>
       <name>joda-time-hibernate</name>
       <url>http://localhost:8082/artifactory/joda-time-hibernate</url>
     </repository>
-  </distributionManagement> -->
-  <distributionManagement>
+  </distributionManagement>
+  <!-- <distributionManagement>
     <snapshotRepository>
       <id>nexus-snapshots</id>
       <url>http://localhost:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
-  </distributionManagement>
+  </distributionManagement> -->
 
   <!-- ==================================================================== -->
   <profiles>
@@ -499,33 +499,6 @@
               </execution>
             </executions>
           </plugin>
-          <plugin>
-            <groupId>org.jfrog.buildinfo</groupId>
-            <artifactId>artifactory-maven-plugin</artifactId>
-            <version>3.2.0</version>
-            <inherited>false</inherited>
-            <executions>
-                <execution>
-                    <id>build-info</id>
-                    <goals>
-                        <goal>publish</goal>
-                    </goals>
-                    <configuration>
-                        <deployProperties>
-                            <gradle>awesome</gradle>
-                            <review.team>qa</review.team>
-                        </deployProperties>
-                        <publisher>
-                            <contextUrl>https://oss.jfrog.org</contextUrl>
-                            <username>admin</username>
-                            <password>password</password>
-                            <repoKey>joda-time-hibernate</repoKey>
-                            <snapshotRepoKey>joda-time-hibernate</snapshotRepoKey>
-                        </publisher>
-                    </configuration>
-                </execution>
-            </executions>
-          </plugin>
         </plugins>
       </build>
 
@@ -549,6 +522,7 @@
   </profiles>
 
   <!-- ==================================================================== -->
+
   <properties>
     <!-- Plugin version numbers -->
     <maven-assembly-plugin.version>2.5.3</maven-assembly-plugin.version>
