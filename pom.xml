@@ -420,19 +420,26 @@
 
   <!-- ==================================================================== -->
 
-  <distributionManagement>
+  <!-- <distributionManagement>
     <repository>
       <id>joda-time-hibernate</id>
       <name>joda-time-hibernate</name>
       <url>http://localhost:8082/artifactory/joda-time-hibernate</url>
     </repository>
-  </distributionManagement>
-  <!-- <distributionManagement>
-    <snapshotRepository>
-      <id>nexus-snapshots</id>
-      <url>http://localhost:8081/repository/maven-snapshots/</url>
-    </snapshotRepository>
   </distributionManagement> -->
+  
+  <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>56ee39c3aef0-releases</name>
+        <url>http://localhost:8081/artifactory/joda-time-hibernate</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>56ee39c3aef0-snapshots</name>
+        <url>http://localhost:8081/artifactory/joda-time-hibernate</url>
+    </snapshotRepository>
+  </distributionManagement>
 
   <!-- ==================================================================== -->
   <profiles>
